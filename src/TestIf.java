@@ -8,14 +8,6 @@ public class TestIf {
 		
 		// ctrl + shift + \ -> to uncommment (block comment/uncomment).
 		
-		//scenario 1
-		/*if(numOne < numTwo) {
-			System.out.println("inside if block");
-			return;
-		}
-		System.out.println("Outside if block");*/
-		
-		//scenario 2
 		try {
 			if(numOne < numTwo) {
 				if(numOne == 2) {
