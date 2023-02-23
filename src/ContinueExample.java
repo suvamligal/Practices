@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ContinueExample {
 
+	//Continue skips the current iteration inside the loop when it matches the condition and resumes at another iteration.
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);

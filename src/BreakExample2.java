@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class BreakExample2 {
 
+	//break terminates the loop as soon as it meets the condition inside the loop.
 	public static void main(String[] args) {
-
 		Scanner scan =  new Scanner(System.in);
 		System.out.println("Enter your name:");
 		String name2 = scan.nextLine();
