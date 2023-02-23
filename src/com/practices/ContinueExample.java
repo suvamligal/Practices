@@ -1,3 +1,4 @@
+package com.practices;
 import java.util.Scanner;
 
 public class ContinueExample {
