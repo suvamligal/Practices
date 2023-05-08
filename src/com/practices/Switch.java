@@ -6,7 +6,7 @@ public class Switch {
 	            switch(i){
 	                case 1: 
 	                case 2:
-						System.out.println("Second case");
+						System.out.println("one case");
 	                case 3:
 	                case 4: //First case
 	                    System.out.println("First case");
