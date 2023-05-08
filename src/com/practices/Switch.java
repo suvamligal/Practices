@@ -15,7 +15,7 @@ public class Switch {
 	                    System.out.println("Second case");
 	                    break;
 	                default: //Default case
-	                    System.out.println("Default case");
+	                    System.out.println("last case");
 	                    break;
 	            }
 	        }
