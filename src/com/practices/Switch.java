@@ -5,7 +5,8 @@ public class Switch {
 		 for(int i = 0;i<10;i++){
 	            switch(i){
 	                case 1: 
-	                case 2: 
+	                case 2:
+						System.out.println("Second case");
 	                case 3:
 	                case 4: //First case
 	                    System.out.println("First case");
