@@ -2,40 +2,27 @@ package com.practices.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-public class ComparatorMain implements Comparable<String>{
-	
+public class ComparatorMain {
 	public static void main(String[] args) {
-		List<String> fruits = new ArrayList();
-		fruits.add("mango");
-		fruits.add("apple");
-		fruits.add("Orange");
-		fruits.add("coconut");
-		fruits.add("Guava");
-		fruits.add("Tangerine");
+		List<Movie> movies = new ArrayList<>();
+		movies.add(new Movie(1,"jam",1996,7.8));
+		movies.add(new Movie(5,"Gone with the wind",1997,9.2));
+		movies.add(new Movie(1,"Crash",1999,5.6));
+		movies.add(new Movie(3,"John wick",2000,9.5));
+		movies.add(new Movie(4,"Mike",2023,8.7));
 		
-		Comparator<String> nameCompare = (a,b) -> a.compareTo(b); 
+		System.out.println("Before Sorting:");
+		for (Movie movie : movies) {
+			System.out.println(movie.getRatings());
+		}
 		
-		System.out.println("Before Sorting");
-		System.out.println(fruits);
-		
-		fruits.sort(nameCompare);
-		System.out.println("nameCompare" + fruits);
-		
-		Collections.sort(fruits);
-		System.out.println("After Sorting");   // look at the sorting on the words that begin with capital vs normal letters.
-		
-		System.out.println(fruits); 
-		
-		
-	}
-
-	@Override
-	public int compareTo(String o) {
-		// TODO Auto-generated method stub
-		return Integer.compare(this, 0);
+		Collections.sort(movies, new SortMovieByRatings());
+		System.out.println("After Sorting:");
+		for (Movie movie : movies) {
+			System.out.println(movie.getRatings());
+		}
 	}
 
 }

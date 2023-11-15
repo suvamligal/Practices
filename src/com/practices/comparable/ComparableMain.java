@@ -12,7 +12,6 @@ public class ComparableMain{
 		Student std3 = new Student(3, "angel", 21, "nine");
 		Student std4 = new Student(4, "tam", 44, "eleven");
 		Student std5 = new Student(5, "george", 45, "eleven");
-	
 		
 		List<Student> students = new ArrayList<>();
 		students.add(std1);
