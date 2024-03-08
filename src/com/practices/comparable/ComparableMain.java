@@ -20,9 +20,9 @@ public class ComparableMain{
 		students.add(std4);
 		students.add(std5);
 		
-		System.out.println("Before Sorting" + students);
+		System.out.println("Before Sorting \n" + students);
 		Collections.sort(students);
-		System.out.println("After Sorting" + students);
+		System.out.println("After Sorting \n" + students);
 		
 		
 	}

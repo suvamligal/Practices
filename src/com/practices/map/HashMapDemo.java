@@ -16,7 +16,8 @@ public class HashMapDemo {
 		map.put(103, "Apple");
 		map.put(104, "Guava");
 		map.put(105, "Pineapple");
-		map.put(103, "replaced apple"); // will replace the value in key 103 from "apple" to "replaced apple"
+		map.put(103, "replaced apple"); // will replace the value in key 103 from "apple" to "replaced apple". 
+										// keys will be unique but value will be updated.
 		System.out.println(map);
 
 		System.out.println(map.containsKey(101));
